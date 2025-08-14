@@ -24,7 +24,7 @@ typedef enum CATONE_STATUS {
 
 int usage(void)
 {
-  return printf("Usage: catonce <path>\n");
+  return printf("Usage: catone <path>\n");
 }
 
 int is_file(const char *path) //Hat tip to response on https://stackoverflow.com/questions/4553012/checking-if-a-file-is-a-directory-or-just-a-file
@@ -66,7 +66,7 @@ int cat_file(const char *path)
     sprintf(full_path, "%s/%s", path, entry->d_name);
     if (is_file(full_path))
     {
-      printf("catone: Found file %s\nContents:\n\n", entry->d_name);
+      printf("catone: Found file %s\nContents:\n", entry->d_name);
       char cmd[CMD_LEN_WITH_SPACE + MAX_DIRNAME_LEN + MAX_FILENAME_LEN + 1];
       sprintf(cmd, "cat %s", full_path);
       if (system(cmd) != 0)
