@@ -15,3 +15,4 @@ uninstall:
 
 clean:
 	rm -f catone
+
