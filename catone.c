@@ -6,7 +6,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#define DEBUG
+//#define DEBUG
 
 #define MAX_DIRNAME_LEN 1024
 #define MAX_FILENAME_LEN 512
