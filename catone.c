@@ -73,6 +73,7 @@ int cat_file(const char *path)
       {
         return CATONE_CMD_ERR;
       }
+      putchar('\n');
       return CATONE_SUCCESS;
     }
   }
